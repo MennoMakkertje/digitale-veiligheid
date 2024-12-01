@@ -1,0 +1,307 @@
+@import url(navbar.css);
+
+.inleiding{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: minmax(auto, 1000px);
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+    "titel"
+    "tekst"; 
+    justify-content: center;
+    max-width: 1100px;
+    margin: 50px auto;
+    border: 2px solid #000; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    background-color: #abcdd5; 
+}
+.titelInleiding{
+    padding-top: 20px;
+    box-sizing: border-box;
+    grid-area: titel;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: capitalize;
+    text-align: center;
+}
+.tekstileiding{
+    width: 100%;
+    grid-area: tekst;
+}
+
+.OD1{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: minmax(auto, 500px) minmax(auto, 500px);
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+    " titel afbeelding"
+    " tekst afbeelding"; 
+    justify-content: center;
+    max-width: 1100px;
+    margin: 50px auto;
+    border: 2px solid #000; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    background-color: #f4dca8; 
+}
+#imgOD1{
+    padding-left: 10px;
+    max-width: 70%;
+    grid-area: afbeelding;
+    align-self: center;
+    justify-self: center;
+}
+.titelOD1{
+    padding-top: 20px;
+    box-sizing: border-box;
+    grid-area: titel;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: capitalize;
+    text-align: center;
+}
+.tekstOD1{
+    width: 100%;
+    grid-area: tekst;
+}
+
+
+.OD2{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: minmax(auto, 500px) minmax(auto, 500px);
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+    " titel afbeelding"
+    " tekst afbeelding"; 
+    justify-content: center;
+    max-width: 1100px;
+    margin: 50px auto;
+    border: 2px solid #000; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    background-color: #fd6dfa; 
+}
+#imgOD2{
+    padding-left: 10px;
+    max-width: 70%;
+    grid-area: afbeelding;
+    align-self: center;
+    justify-self: center;
+}
+.titelOD2{
+    padding-top: 20px;
+    box-sizing: border-box;
+    grid-area: titel;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: capitalize;
+    text-align: center;
+}
+.tekstOD2{
+    width: 100%;
+    grid-area: tekst;
+}
+
+.OD3{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: minmax(auto, 500px) minmax(auto, 500px);
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+    "afbeelding titel"
+    "afbeelding tekst"; 
+    justify-content: center;
+    max-width: 1100px;
+    margin: 50px auto;
+    border: 2px solid #000; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    background-color: #41889d; 
+}
+#imgOD3{
+    padding-right: 50px;
+    max-width: 70%;
+    grid-area: afbeelding;
+    align-self: center;
+    justify-self: center;
+}
+.titelOD3{
+    padding-top: 20px;
+    box-sizing: border-box;
+    grid-area: titel;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: capitalize;
+    text-align: center;
+}
+.tekstOD3{
+    width: 100%;
+    grid-area: tekst;
+}
+
+.OD4{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: minmax(auto, 500px) minmax(auto, 500px);
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+    " titel afbeelding"
+    " tekst afbeelding";  
+    justify-content: center;
+    max-width: 1100px;
+    margin: 50px auto;
+    border: 2px solid #000; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    background-color: #f7dfa7; 
+}
+#imgOD4{
+    padding-left: 10px;
+    max-width: 70%;
+    grid-area: afbeelding;
+    align-self: center;
+    justify-self: center;
+}
+.titelOD4{
+    padding-top: 20px;
+    box-sizing: border-box;
+    grid-area: titel;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: capitalize;
+    text-align: center;
+}
+.tekstOD4{
+    width: 100%;
+    grid-area: tekst;
+}
+
+.OD5{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: minmax(auto, 1000px);
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+    " titel"
+    " tekst";  
+    justify-content: center;
+    max-width: 1100px;
+    margin: 50px auto;
+    border: 2px solid #000; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    background-color: #8e633d; 
+}
+#imgOD5{
+    grid-area: tekst;
+    max-width: 320px;
+    float: left;
+    padding-right: 20px;
+}
+
+.titelOD5{
+    padding-top: 20px;
+    box-sizing: border-box;
+    grid-area: titel;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: capitalize;
+    text-align: center;
+}
+.tekstOD5{
+    width: 100%;
+    grid-area: tekst;
+}
+
+.OD6{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: minmax(auto, 500px) minmax(auto, 500px);
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+    "afbeelding titel"
+    "afbeelding tekst";  
+    justify-content: center;
+    max-width: 1100px;
+    margin: 50px auto;
+    border: 2px solid #000; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    background-color: #3e5563; 
+}
+#imgOD6{
+    padding-right: 10px;
+    max-width: 80%;
+    grid-area: afbeelding;
+    align-self: center;
+    justify-self: center;
+}
+.titelOD6{
+    padding-top: 20px;
+    box-sizing: border-box;
+    grid-area: titel;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: capitalize;
+    text-align: center;
+}
+.tekstOD6{
+    width: 100%;
+    grid-area: tekst;
+}
+
+.OD7{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: minmax(auto, 500px) minmax(auto, 500px);
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+    "titel afbeelding"
+    "tekst afbeelding";  
+    justify-content: center;
+    max-width: 1100px;
+    margin: 50px auto;
+    border: 2px solid #000; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    background-color: #806c52; 
+}
+#imgOD7{
+    padding-left: 10px;
+    max-width: 80%;
+    grid-area: afbeelding;
+    align-self: center;
+    justify-self: center;
+}
+.titelOD7{
+    padding-top: 20px;
+    box-sizing: border-box;
+    grid-area: titel;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: capitalize;
+    text-align: center;
+}
+.tekstOD7{
+    width: 100%;
+    grid-area: tekst;
+}

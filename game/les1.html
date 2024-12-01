@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="les1.css">
+    <script src="les1.js" defer></script>
+    <title>les 1</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" name="" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </label>
+
+        <label id="overlay" for="sidebar-active"></label>
+        <div class="navbar">
+        <label for="sidebar-active" class="close-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </label> 
+
+            <a class="home-link" href="../index.html"><img src="afbeeldingen/logoGame.webp" alt="logoGame"></a>
+            <a href="overzicht.html">overzicht</a>
+            <a href="#.html">contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="container">
+            <div class="titel">
+                <h1>Wat is phishing?</h1>
+            </div>
+            <div class="tekst">
+                <p id="tekstP">In deze video leer je wat phishing is en waarom het zo'n groot probleem vormt. Na het bekijken van de video beantwoord je enkele vragen.</p>
+                <img id="naarVraag" src="../afbeeldingen/keyboard_tab_24dp_0000_FILL0_wght400_GRAD0_opsz24.png" alt="">
+            </div>
+            <div class="actief">
+                <div class="rechtsA">
+                    <img id="vorigeIMG" src="..//afbeeldingen/keyboard_tab_24dp_0000_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                </div>
+                <div class="middenA">
+                    <video id="videoV" src="video's/phishing1.mp4" controls></video>
+                    <div class="vragen">
+                        <h4 id="tekstVraag">1. Als wie doen criminelen zich voor bij phishing?</h4>
+                        <p id="resultaatP">U kunt de video opieuw bekijken en vervolgens de vragen opnieuw maken of terug gaan naar het overzicht.</p>
+                    
+                        <form>
+                            <div class="antwoorden">
+                                <label for="checkbox1">
+                                    <input type="checkbox" id="checkbox1" value="1"> 
+                                    <span>A</span>
+                                </label>
+                                <label for="checkbox2">
+                                    <input type="checkbox" id="checkbox2" value="2"> 
+                                    <span>B</span>
+                                </label>    
+                                <label for="checkbox3">
+                                    <input type="checkbox" id="checkbox3" value="3"> 
+                                    <span>C</span>
+                                </label>
+                                <label for="checkbox4">
+                                    <input type="checkbox" id="checkbox4" value="4"> 
+                                    <span>D</span>
+                                </label>
+                                <label for="checkbox5">
+                                    <input type="checkbox" id="checkbox5" value="5"> 
+                                    <span>E</span>
+                                </label>
+                                <label for="checkbox6">
+                                    <input type="checkbox" id="checkbox6" value="6"> 
+                                    <span>F</span>
+                                </label>
+                                <label for="checkbox7">
+                                    <input type="checkbox" id="checkbox7" value="7"> 
+                                    <span>G</span>
+                                </label>
+                            </div>
+                            
+                            <button type="submit">Nakijken</button>
+                            <a id="naarOverzicht" href="overzicht.html">naar overzicht</a>
+                            <a id="naarLes1" href="les1.html">start les opnieuw</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="linksA">
+                     <img id="volgendeIMG" src="..//afbeeldingen/keyboard_tab_24dp_0000_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main> 
+    <footer>Met dank aan de Gemeente Kampen. Door Menno Post. Voor vragen mail: 144928@emelwerda.nl</footer>
+</body>
+</html>
