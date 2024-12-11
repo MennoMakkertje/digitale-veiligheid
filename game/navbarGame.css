@@ -1,3 +1,27 @@
+/* Selecteer de scrollbalk */
+::-webkit-scrollbar {
+    width: 8px; /* Breedte van de verticale scrollbar */
+    height: 8px; /* Hoogte van de horizontale scrollbar */
+  }
+  
+  /* Achtergrond van de scrollbalk */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Lichtgrijze achtergrond */
+    border-radius: 10px; /* Ronde hoeken */
+  }
+  
+  /* Scrollbalk zelf */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Donkergrijze balk */
+    border-radius: 10px; /* Ronde hoeken */
+  }
+  
+  /* Scrollbalk bij hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Donkerdere kleur bij hover */
+  }
+  
+
 :root{
     --color-1: #1f1d1c;
     --color-2: #737791d7;
@@ -24,38 +48,6 @@ body{
     "main main"
     "footer footer";
 }
-/*aside{
-    top: 60px;
-    height: calc(100vh - 60px);
-    position: sticky;
-    align-self: start;
-    grid-area: side;
-    background-color: var(--accent-color);
-    justify-content: center;
-}
-aside ul{
-    display: flex;
-    flex-direction: column;
-
-}
-aside button{
-    text-transform: capitalize;
-    border: 1px solid #000; 
-    background-color: var(--accent-color);
-    padding: 5px 5px;
-    margin: 5px;
-}
-aside button:hover{
-    color: #642d6e;
-}
-aside h2, h3{
-    text-transform: uppercase;
-    text-align: center;
-}
-aside h3{
-    padding-top: 20px;
-    font-size: small;
-}*/
 nav {
     top: 0;
     position: sticky;
@@ -117,6 +109,11 @@ footer{
 
 
 @media(max-width: 680px){
+          /* Achtergrond van de scrollbalk */
+    ::-webkit-scrollbar-track {
+    background: black; /* Lichtgrijze achtergrond */
+    border-radius: 10px; /* Ronde hoeken */
+    } 
     .navbar{
         flex-direction: column;
         align-items: flex-start;

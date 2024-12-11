@@ -1,4 +1,7 @@
+const sideCheckbox = document.getElementById("tegel-active");
+
 document.getElementById("OZ1btn").addEventListener("click", function() {
+  sideCheckbox.checked = false;
     // Bepaal het doel-element
     const doelSectie =  document.querySelector('.OZ1');
   
@@ -13,6 +16,7 @@ document.getElementById("OZ1btn").addEventListener("click", function() {
   });
 
   document.getElementById("OZ2btn").addEventListener("click", function() {
+    sideCheckbox.checked = false;
     // Bepaal het doel-element
     const doelSectie =  document.querySelector('.OZ2');
   
@@ -27,6 +31,7 @@ document.getElementById("OZ1btn").addEventListener("click", function() {
   });
 
   document.getElementById("OZ3btn").addEventListener("click", function() {
+    sideCheckbox.checked = false;
     // Bepaal het doel-element
     const doelSectie =  document.querySelector('.OZ3');
   
@@ -41,6 +46,7 @@ document.getElementById("OZ1btn").addEventListener("click", function() {
   });
 
   document.getElementById("OZ4btn").addEventListener("click", function() {
+    sideCheckbox.checked = false;
     // Bepaal het doel-element
     const doelSectie =  document.querySelector('.OZ4');
   
@@ -55,6 +61,7 @@ document.getElementById("OZ1btn").addEventListener("click", function() {
   });
 
   document.getElementById("OZ5btn").addEventListener("click", function() {
+    sideCheckbox.checked = false;
     // Bepaal het doel-element
     const doelSectie =  document.querySelector('.OZ5');
   
@@ -69,6 +76,7 @@ document.getElementById("OZ1btn").addEventListener("click", function() {
   });
 
   document.getElementById("OZ6btn").addEventListener("click", function() {
+    sideCheckbox.checked = false;
     // Bepaal het doel-element
     const doelSectie =  document.querySelector('.OZ6');
   
@@ -83,6 +91,7 @@ document.getElementById("OZ1btn").addEventListener("click", function() {
   });
 
   document.getElementById("OZ7btn").addEventListener("click", function() {
+    sideCheckbox.checked = false;
     // Bepaal het doel-element
     const doelSectie =  document.querySelector('.OZ7');
   
@@ -97,6 +106,7 @@ document.getElementById("OZ1btn").addEventListener("click", function() {
   });
 
   document.getElementById("OZ8btn").addEventListener("click", function() {
+    sideCheckbox.checked = false;
     // Bepaal het doel-element
     const doelSectie =  document.querySelector('.OZ8');
   
@@ -111,6 +121,7 @@ document.getElementById("OZ1btn").addEventListener("click", function() {
   });
 
   document.getElementById("NI1btn").addEventListener("click", function() {
+    sideCheckbox.checked = false;
     // Bepaal het doel-element
     const doelSectie =  document.querySelector('.NI1');
   
@@ -125,6 +136,7 @@ document.getElementById("OZ1btn").addEventListener("click", function() {
   });
 
   document.getElementById("VOZ1btn").addEventListener("click", function() {
+    sideCheckbox.checked = false;
     // Bepaal het doel-element
     const doelSectie =  document.querySelector('.VOZ1');
   
@@ -139,6 +151,7 @@ document.getElementById("OZ1btn").addEventListener("click", function() {
   });
 
   document.getElementById("VOZ2btn").addEventListener("click", function() {
+    sideCheckbox.checked = false;
     // Bepaal het doel-element
     const doelSectie =  document.querySelector('.VOZ2');
   
@@ -153,6 +166,7 @@ document.getElementById("OZ1btn").addEventListener("click", function() {
   });
 
   document.getElementById("PR1btn").addEventListener("click", function() {
+    sideCheckbox.checked = false;
     // Bepaal het doel-element
     const doelSectie =  document.querySelector('.PRE1');
   
@@ -167,6 +181,7 @@ document.getElementById("OZ1btn").addEventListener("click", function() {
   });
 
   document.getElementById("PR2btn").addEventListener("click", function() {
+    sideCheckbox.checked = false;
     // Bepaal het doel-element
     const doelSectie =  document.querySelector('.PRE2');
   
@@ -179,3 +194,95 @@ document.getElementById("OZ1btn").addEventListener("click", function() {
       behavior: "smooth"
     });
   });
+
+  document.getElementById("OZ1btnA").addEventListener("click", function() {
+    sideCheckbox.checked = false;
+    const doelSectie = document.querySelector('.OZ1');
+    const offset = doelSectie.getBoundingClientRect().top + window.pageYOffset - 80;
+    window.scrollTo({ top: offset, behavior: "smooth" });
+  });
+  
+  document.getElementById("OZ2btnA").addEventListener("click", function() {
+    sideCheckbox.checked = false;
+    const doelSectie = document.querySelector('.OZ2');
+    const offset = doelSectie.getBoundingClientRect().top + window.pageYOffset - 80;
+    window.scrollTo({ top: offset, behavior: "smooth" });
+  });
+  
+  document.getElementById("OZ3btnA").addEventListener("click", function() {
+    sideCheckbox.checked = false;
+    const doelSectie = document.querySelector('.OZ3');
+    const offset = doelSectie.getBoundingClientRect().top + window.pageYOffset - 80;
+    window.scrollTo({ top: offset, behavior: "smooth" });
+  });
+  
+  document.getElementById("OZ4btnA").addEventListener("click", function() {
+    sideCheckbox.checked = false;
+    const doelSectie = document.querySelector('.OZ4');
+    const offset = doelSectie.getBoundingClientRect().top + window.pageYOffset - 80;
+    window.scrollTo({ top: offset, behavior: "smooth" });
+  });
+  
+  document.getElementById("OZ5btnA").addEventListener("click", function() {
+    sideCheckbox.checked = false;
+    const doelSectie = document.querySelector('.OZ5');
+    const offset = doelSectie.getBoundingClientRect().top + window.pageYOffset - 80;
+    window.scrollTo({ top: offset, behavior: "smooth" });
+  });
+  
+  document.getElementById("OZ6btnA").addEventListener("click", function() {
+    sideCheckbox.checked = false;
+    const doelSectie = document.querySelector('.OZ6');
+    const offset = doelSectie.getBoundingClientRect().top + window.pageYOffset - 80;
+    window.scrollTo({ top: offset, behavior: "smooth" });
+  });
+  
+  document.getElementById("OZ7btnA").addEventListener("click", function() {
+    sideCheckbox.checked = false;
+    const doelSectie = document.querySelector('.OZ7');
+    const offset = doelSectie.getBoundingClientRect().top + window.pageYOffset - 80;
+    window.scrollTo({ top: offset, behavior: "smooth" });
+  });
+  
+  document.getElementById("OZ8btnA").addEventListener("click", function() {
+    sideCheckbox.checked = false;
+    const doelSectie = document.querySelector('.OZ8');
+    const offset = doelSectie.getBoundingClientRect().top + window.pageYOffset - 80;
+    window.scrollTo({ top: offset, behavior: "smooth" });
+  });
+  
+  document.getElementById("NI1btnA").addEventListener("click", function() {
+    sideCheckbox.checked = false;
+    const doelSectie = document.querySelector('.NI1');
+    const offset = doelSectie.getBoundingClientRect().top + window.pageYOffset - 80;
+    window.scrollTo({ top: offset, behavior: "smooth" });
+  });
+  
+  document.getElementById("VOZ1btnA").addEventListener("click", function() {
+    sideCheckbox.checked = false;
+    const doelSectie = document.querySelector('.VOZ1');
+    const offset = doelSectie.getBoundingClientRect().top + window.pageYOffset - 80;
+    window.scrollTo({ top: offset, behavior: "smooth" });
+  });
+  
+  document.getElementById("VOZ2btnA").addEventListener("click", function() {
+    sideCheckbox.checked = false;
+    const doelSectie = document.querySelector('.VOZ2');
+    const offset = doelSectie.getBoundingClientRect().top + window.pageYOffset - 80;
+    window.scrollTo({ top: offset, behavior: "smooth" });
+  });
+  
+  document.getElementById("PR1btnA").addEventListener("click", function() {
+    sideCheckbox.checked = false;
+    const doelSectie = document.querySelector('.PRE1');
+    const offset = doelSectie.getBoundingClientRect().top + window.pageYOffset - 80;
+    window.scrollTo({ top: offset, behavior: "smooth" });
+  });
+  
+  document.getElementById("PR2btnA").addEventListener("click", function() {
+    sideCheckbox.checked = false;
+    const doelSectie = document.querySelector('.PRE2');
+    const offset = doelSectie.getBoundingClientRect().top + window.pageYOffset - 80;
+    window.scrollTo({ top: offset, behavior: "smooth" });
+  });
+  

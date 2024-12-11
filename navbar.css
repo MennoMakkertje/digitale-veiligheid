@@ -1,3 +1,26 @@
+/* Selecteer de scrollbalk */
+::-webkit-scrollbar {
+    width: 8px; /* Breedte van de verticale scrollbar */
+    height: 8px; /* Hoogte van de horizontale scrollbar */
+  }
+  
+  /* Achtergrond van de scrollbalk */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Lichtgrijze achtergrond */
+    border-radius: 10px; /* Ronde hoeken */
+  }
+  
+  /* Scrollbalk zelf */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Donkergrijze balk */
+    border-radius: 10px; /* Ronde hoeken */
+  }
+  
+  /* Scrollbalk bij hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Donkerdere kleur bij hover */
+  }
+  
 :root{
     --color-1: #0f1016;
     --color-2: #737791d7;
@@ -25,29 +48,30 @@ body{
     "footer footer";
 }
 aside{
+    margin-bottom: 30px;
     min-width: 100px;
     top: 60px;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 90px);
     position: sticky;
     align-self: start;
     grid-area: side;
     background-color: var(--accent-color);
     justify-content: center;
-    overflow: auto;
+    overflow-y: auto;
 }
 aside ul{
     display: flex;
     flex-direction: column;
 
 }
-aside button{
+aside button, nav button{
     text-transform: capitalize;
     border: 1px solid #000; 
     background-color: var(--accent-color);
     padding: 5px 5px;
     margin: 5px;
 }
-aside button:hover{
+aside button:hover, nav button:hover{
     color: #642d6e;
 }
 aside h2, h3{
@@ -106,6 +130,27 @@ nav svg{
 }
 
 
+
+.tegel {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: none;
+    color: var(--text-color);
+}
+nav button {
+    display: none;
+}
+#tegel-active{
+    display: none;
+}
+.open-tegel-button, .close-tegel-button{
+    display: none;
+}
+
+
 footer{
     background-color: var(--color-1);
     color: var(--text-color);
@@ -123,6 +168,11 @@ footer{
 
 
 @media(max-width: 680px){
+      /* Achtergrond van de scrollbalk */
+  ::-webkit-scrollbar-track {
+    background: black; /* Lichtgrijze achtergrond */
+    border-radius: 10px; /* Ronde hoeken */
+  }
     .navbar{
         flex-direction: column;
         align-items: flex-start;
@@ -156,5 +206,72 @@ footer{
         left: 0;
         position: fixed;
         z-index: 9;
+    }
+
+    .tegel{
+        overflow-y: auto;
+        flex-direction: column;
+        align-items: flex-end;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 10;
+        width: 150px;
+        height: calc(100vh - 30px);
+        background-color: var(--color-1);
+        box-shadow: 5px 0 5px rgba(0, 0, 0, 0.25);
+        transition: 0.70s ease-out;
+        display: unset;
+        
+    }
+    nav button{
+        box-sizing: border-box;
+        height: auto;
+        width: 90%;
+        padding: 20px 30px;
+        justify-content: center;
+        display: flex;
+    }
+    .open-tegel-button{
+        display: block;
+        padding: 20px;
+        margin-right: auto;
+    }
+    .close-tegel-button{
+        display: block;
+        padding: 20px;
+        margin-left: auto;
+        width: fit-content
+    }
+    #tegel-active:checked ~ .tegel{
+        left: 0;
+    }
+    #tegel-active:checked ~ #overlayTegel{
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 9;
+    }
+    aside {
+        display: none;
+    }
+    body{
+        background-color: #cdcdcd;
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 60px 1fr 30px;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "footer";
+    }
+}
+
+@media(max-width: 688px){
+    footer p{
+        display: none;
     }
 }

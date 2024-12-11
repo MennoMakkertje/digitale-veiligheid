@@ -122,7 +122,7 @@
 .Website{
     grid-area: main;
     display: grid;
-    grid-template-columns: minmax(auto, 600px) minmax(auto, 400px);
+    grid-template-columns: minmax(auto, 400px) minmax(auto, 600px);
     grid-template-rows: 100px auto;
     grid-template-areas: 
     " titel titel"
@@ -138,7 +138,7 @@
 }
 #imgWebiste{
     padding-left: 10px;
-    max-width: 80%;
+    max-width: 90%;
     grid-area: afbeelding;
     align-self: center;
     justify-self: center;
@@ -157,4 +157,25 @@
     overflow: hidden;
     width: 100%;
     grid-area: tekst;
+}
+
+@media(max-width: 680px){
+    .inleiding, .lesmethode, .Eindspel, .Website{
+        display: grid;
+        grid-template-columns: minmax(auto, 500px);
+        grid-template-rows: 100px auto auto;
+        grid-template-areas: 
+        " titel"
+        " tekst"
+        "afbeelding";
+    }
+    #imgInleiding, #imgLesmethode2, #imgWebiste, #imgOD5{
+        grid-area: afbeelding;
+        padding-top: 20px;
+        padding-left: 0;
+        justify-self: center;
+    }
+    #imgLesmethode1{
+        float: unset;
+    }
 }

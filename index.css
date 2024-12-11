@@ -136,8 +136,6 @@
         padding-left: 0;
         justify-self: center;
     }
-
-
     .vraagstuk{
         display: grid;
         grid-template-columns: minmax(auto, 500px);
@@ -171,7 +169,6 @@
     padding-left: 0;
     justify-self: center;
     }
-    
 }
 
 @media(max-width: 680px){

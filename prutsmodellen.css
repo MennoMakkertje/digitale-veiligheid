@@ -305,3 +305,29 @@
     width: 100%;
     grid-area: tekst;
 }
+
+@media(max-width: 680px){
+    .inleiding{
+        display: grid;
+        grid-template-columns: minmax(auto, 500px);
+        grid-template-rows: 100px auto;
+        grid-template-areas: 
+        " titel"
+        " tekst";
+    }
+    .OD1, .OD2, .OD3, .OD4, .OD5, .OD6, .OD7{
+        display: grid;
+        grid-template-columns: minmax(auto, 500px);
+        grid-template-rows: 100px auto auto;
+        grid-template-areas: 
+        " titel"
+        " tekst"
+        "afbeelding";
+    }
+    #imgOD1, #imgOD2, #imgOD3, #imgOD4, #imgOD5, #imgOD6, #imgOD7{
+        grid-area: afbeelding;
+        padding-top: 20px;
+        padding-left: 0;
+        justify-self: center;
+    }
+}

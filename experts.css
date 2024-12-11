@@ -50,3 +50,17 @@
     max-width: 300px;
     float: right;
 }
+
+
+@media(max-width: 800px){
+    #daniëlLaptop{
+        display: none;
+    }
+
+}
+@media(max-width: 375px){
+    #imgDaniël{
+        float: unset
+    }
+
+}
