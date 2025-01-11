@@ -32,6 +32,7 @@ document.getElementById("resultaatP").style.display = "none";
 video.addEventListener('ended', () => {
     document.getElementById("tekstP").innerHTML = "Klik op de knop om naar de vragen te gaan.";
     naarVraag.style.visibility = "visible"
+    naarVraag.style.display = "unset"
     naarVraag.addEventListener('click', naarVragen);
     // Controleer of de video in volledig scherm is
     if (document.fullscreenElement === video) {
@@ -54,6 +55,18 @@ async function removeEvent() {
     form.removeEventListener('submit', sub3);
     form.removeEventListener('submit', sub4);
 }
+
+function updateGridTemplateRows() {
+    if (window.matchMedia("(max-width: 700px)").matches) {
+      // Als scherm kleiner is dan 701px
+      container.style.gridTemplateRows = "75px auto auto";
+    } else {
+      // Als scherm groter is dan 700px
+      container.style.gridTemplateRows = "75px 75px auto";
+    }
+  }
+
+
 async function naarVragen() {
     await removeEvent();
     checkboxes.forEach(checkbox => {
@@ -61,8 +74,14 @@ async function naarVragen() {
     });
     document.querySelector('.rechtsA').style.removeProperty("display");
     document.querySelector('.linksA').style.removeProperty("display");
-    document.querySelector('.vragen').style.display = "flex"
-    container.style.gridTemplateRows = "75px 75px auto"
+    document.querySelector('.vragen').style.display = "flex";
+    
+// Update direct bij het laden van de pagina
+updateGridTemplateRows();
+
+// Update wanneer het schermformaat verandert
+window.addEventListener("resize", updateGridTemplateRows);
+
     video.style.display = "none";
     naarVraag.style.display = "none";
     tekstP.innerHTML = "Op alle vragen kan je meerdere antwoorden invullen, soms moet je dit doen maar niet altijd!<br> Klik na het beantwoorden van de vraag op NAKIJKEN om te kijken of de vraag goed is.<br> Na de laatste vraag ziet u hoeveel vragen u goed en fout heeft."

@@ -89,8 +89,17 @@
 
 
 @media(max-width: 880px){
+    .uitleg{
+        grid-template-rows: auto auto;
+    }
     .overzichtLessen{
         display: flex;
         flex-direction: column;
     }
 }
+@media(max-width: 775px){
+    .titel{
+        text-align: center;
+    }
+}
+

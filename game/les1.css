@@ -28,14 +28,16 @@
     grid-area: tekst;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 .tekst p{
     align-self: center;
-    text-align: center;
 }
 .tekst img{
     margin-top: 5px;
     visibility: hidden;
+    height: 45px;
+    width: 45px;
 }
 .actief{
     grid-area: actief;
@@ -87,4 +89,41 @@ input[type="checkbox"] {
 
 #vorigeIMG, #volgendeIMG{
     visibility: hidden;
+}
+
+@media(max-width: 880px){
+    .container{
+        grid-template-rows: auto auto auto;
+        text-align: center;
+    }
+    #naarVraag{
+        display: none;
+    }
+
+}
+@media(max-width: 701px){
+    .container{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 75px auto auto;
+        grid-template-areas: 
+        "titel"
+        "tekst"
+        "actief"; 
+        justify-content: center;
+        max-width: 1200px;
+        margin: 50px auto; /* Centreren van de grid met wat ruimte aan de boven- en onderkant */
+        border: 2px solid #000; 
+        padding: 20px; 
+        border-radius: 10px; 
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+        background-color: white;  
+    }
+}
+@media(max-width: 1000px){
+    button, #naarOverzicht, #naarLes1 {
+        display: flex;
+        justify-content: center;
+    }
 }

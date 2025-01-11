@@ -149,3 +149,8 @@ footer{
         z-index: 9;
     }
 }
+@media(max-width: 688px){
+    footer p{
+        display: none;
+    }
+}
