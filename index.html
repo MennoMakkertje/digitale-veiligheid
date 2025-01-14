@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="afbeeldingen/favicon_io (1)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="afbeeldingen/favicon_io (1)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="afbeeldingen/favicon_io (1)/favicon-16x16.png">
+    <link rel="manifest" href="afbeeldingen/favicon_io (1)/site.webmanifest">
+
     <title>Technasium opdracht</title>
 </head>
+
 <body>
     <nav>
         <input type="checkbox" name="" id="tegel-active">
         <label for="tegel-active" class="open-tegel-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z"/></svg>        </label>
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368">
+                <path
+                    d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
+            </svg> </label>
 
         <label id="overlayTegel" for="tegel-active"></label>
         <div class="tegel">
-        <label for="tegel-active" class="close-tegel-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-        </label> 
+            <label for="tegel-active" class="close-tegel-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                    fill="#5f6368">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </label>
 
-        <button id="SAMENVATTINGbtn">samenvatting</button>
-        <button id="PROJECTbtn">het project</button>
-        <button id="PVAbtn">plan van aanpak</button>
+            <button id="SAMENVATTINGbtn">samenvatting</button>
+            <button id="PROJECTbtn">het project</button>
+            <button id="PVAbtn">plan van aanpak</button>
         </div>
 
         <input type="checkbox" name="" id="sidebar-active">
         <label for="sidebar-active" class="open-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
         </label>
 
         <label id="overlay" for="sidebar-active"></label>
         <div class="navbar">
-        <label for="sidebar-active" class="close-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-        </label> 
+            <label for="sidebar-active" class="close-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                    fill="#5f6368">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </label>
 
-            <a class="home-link" href="index.html"><img src="afbeeldingen/Technasium-logo.png" alt="Technasium-logo"></a>
+            <a class="home-link" href="index.html"><img src="afbeeldingen/Technasium-logo.png"
+                    alt="Technasium-logo"></a>
             <a href="onderzoeken.html">onderzoeken</a>
             <a href="experts.html">experts</a>
             <a href="prutsmodellen.html">prutsmodellen</a>
@@ -50,16 +71,31 @@
             <div class="titelSamenvatting">
                 <h1>samenvatting</h1>
             </div>
-                <div class="wrapSamenvatting">
-                    <p id="pSamenvatting">
-                        Uit onderzoek blijkt dat veel ouderen nog onvoldoende weerbaar zijn tegen cybercriminaliteit. Dit leidt tot de centrale vraag: Op welke manieren kan de gemeente Kampen de digitale vaardigheden van ouderen verbeteren om hen beter te beschermen tegen online bedreigingen? Naar aanleiding van deze vraag is een leermethode ontwikkeld die ouderen ondersteunt in het vergroten van hun weerbaarheid tegen cybercrime.<br>
-                        De opdrachtgever voor dit project is Simon Kats, Adviseur Openbare Orde en Veiligheid bij de gemeente Kampen en lid van de veiligheidsregio Oost-Nederland. Om het project helder in kaart te brengen, is gestart met een gesprek met de opdrachtgever om de opdracht en verwachtingen te verduidelijken. Vervolgens begon het onderzoeksproces. Dit onderzoek richtte zich op verschillende vormen van online dreigingen en de bijbehorende digitale vaardigheden die nodig zijn om hiertegen beschermd te zijn. In samenwerking met een ervaren expert zijn twee specifieke online dreigingen geselecteerd waarvoor de leermethode zal worden ontwikkeld.<br>
-                        Bij de ontwikkeling van de leermethode is onderzoek gedaan naar effectieve leermethoden. Vanuit deze analyse ontstond het idee om instructievideo’s te combineren met interactieve vragen. Na het voltooien van alle lessen wordt een eindspel gespeeld om te testen of de opgedane kennis is blijven hangen. Dit concept is verder uitgewerkt in een gebruiksvriendelijke website waar deelnemers de verschillende niveaus kunnen doorlopen en de instructievideo’s kunnen volgen.<br>
-                        Deze aanpak biedt ouderen een toegankelijke en doeltreffende manier om hun digitale weerbaarheid te vergroten en beter voorbereid te zijn op online bedreigingen.
+            <div class="wrapSamenvatting">
+                <p id="pSamenvatting">
+                    Uit onderzoek blijkt dat veel ouderen nog onvoldoende weerbaar zijn tegen cybercriminaliteit. Dit
+                    leidt tot de centrale vraag: Op welke manieren kan de gemeente Kampen de digitale vaardigheden van
+                    ouderen verbeteren om hen beter te beschermen tegen online bedreigingen? Naar aanleiding van deze
+                    vraag is een leermethode ontwikkeld die ouderen ondersteunt in het vergroten van hun weerbaarheid
+                    tegen cybercrime.<br>
+                    De opdrachtgever voor dit project is Simon Kats, Adviseur Openbare Orde en Veiligheid bij de
+                    gemeente Kampen en lid van de veiligheidsregio Oost-Nederland. Om het project helder in kaart te
+                    brengen, is gestart met een gesprek met de opdrachtgever om de opdracht en verwachtingen te
+                    verduidelijken. Vervolgens begon het onderzoeksproces. Dit onderzoek richtte zich op verschillende
+                    vormen van online dreigingen en de bijbehorende digitale vaardigheden die nodig zijn om hiertegen
+                    beschermd te zijn. In samenwerking met een ervaren expert zijn twee specifieke online dreigingen
+                    geselecteerd waarvoor de leermethode zal worden ontwikkeld.<br>
+                    Bij de ontwikkeling van de leermethode is onderzoek gedaan naar effectieve leermethoden. Vanuit deze
+                    analyse ontstond het idee om instructievideo’s te combineren met interactieve vragen. Na het
+                    voltooien van alle lessen wordt een eindspel gespeeld om te testen of de opgedane kennis is blijven
+                    hangen. Dit concept is verder uitgewerkt in een gebruiksvriendelijke website waar deelnemers de
+                    verschillende niveaus kunnen doorlopen en de instructievideo’s kunnen volgen.<br>
+                    Deze aanpak biedt ouderen een toegankelijke en doeltreffende manier om hun digitale weerbaarheid te
+                    vergroten en beter voorbereid te zijn op online bedreigingen.
 
-                    </p>
-                </div>    
-            
+                </p>
+            </div>
+
             <img id="presentatie" src="afbeeldingen/undraw_Presentation_re_sxof.png" alt="scrum board">
         </section>
 
@@ -67,15 +103,23 @@
             <div class="titelVraagstuk">
                 <h1>het project</h1>
             </div>
-                <div class="wrapVraagstuk">
-                    <img id="simon" src="afbeeldingen/Simon.jpg" alt="Simon Kats">
-                    <p id="pVraagstuk">Het onderzoek richt zich op de volgende vraag: Op welke manieren kan de gemeente Kampen de digitale vaardigheden van ouderen verbeteren om hen beter te beschermen tegen online bedreigingen?<br>
-                        Tijdens een gesprek met Simon Kats, Adviseur Openbare Orde en Veiligheid bij de gemeente Kampen en lid van de veiligheidsregio Oost-Nederland, werd snel duidelijk dat cybercrime – ook wel online bedreigingen genoemd – een zeer actueel en omvangrijk thema is. Er zijn talloze onderzoeken over dit onderwerp beschikbaar, omdat het een probleem is dat niet alleen Nederland treft, maar wereldwijd voor grote uitdagingen zorgt.<br>
-                        Het doel van dit project is om een praktische tool te ontwikkelen die mensen helpt hun digitale vaardigheden te verbeteren. Hierdoor kunnen zij zichzelf beter beschermen tegen cybercrime en minder vatbaar worden voor online dreigingen.
-                        
-                    </p>
-                </div>    
-            
+            <div class="wrapVraagstuk">
+                <img id="simon" src="afbeeldingen/Simon.jpg" alt="Simon Kats">
+                <p id="pVraagstuk">Het onderzoek richt zich op de volgende vraag: Op welke manieren kan de gemeente
+                    Kampen de digitale vaardigheden van ouderen verbeteren om hen beter te beschermen tegen online
+                    bedreigingen?<br>
+                    Tijdens een gesprek met Simon Kats, Adviseur Openbare Orde en Veiligheid bij de gemeente Kampen en
+                    lid van de veiligheidsregio Oost-Nederland, werd snel duidelijk dat cybercrime – ook wel online
+                    bedreigingen genoemd – een zeer actueel en omvangrijk thema is. Er zijn talloze onderzoeken over dit
+                    onderwerp beschikbaar, omdat het een probleem is dat niet alleen Nederland treft, maar wereldwijd
+                    voor grote uitdagingen zorgt.<br>
+                    Het doel van dit project is om een praktische tool te ontwikkelen die mensen helpt hun digitale
+                    vaardigheden te verbeteren. Hierdoor kunnen zij zichzelf beter beschermen tegen cybercrime en minder
+                    vatbaar worden voor online dreigingen.
+
+                </p>
+            </div>
+
             <img id="scrum" src="afbeeldingen/undraw_Scrum_board_re_wk7v.png" alt="scrum board">
         </section>
 
@@ -85,16 +129,21 @@
             </div>
             <div class="tekstPVA">
                 <img id="imgPVA" src="afbeeldingen/PVA.jpg" alt="plan van aanpak">
-                <p>Om een project goed te kunnen uitvoeren is het natuurlijk van belang dat je een goed plan van aanpak hebt. Dit is een globaal plaatje van het plan van aanpak.
+                <p>Om een project goed te kunnen uitvoeren is het natuurlijk van belang dat je een goed plan van aanpak
+                    hebt. Dit is een globaal plaatje van het plan van aanpak.
                 </p>
                 <ol>
                     <li>Globaal onderzoeken welke soorten cybercrime er zijn.</li>
-                    <li>Onderzoeken voor welke type cybercrime goede digitale vaardigheden nodig heeft om je ervan te beschermen.</li>
+                    <li>Onderzoeken voor welke type cybercrime goede digitale vaardigheden nodig heeft om je ervan te
+                        beschermen.</li>
                     <li>Onderzoeken hoe momenteel digitale vaardigheden worden geleerd.</li>
-                    <li>Één type cybercrime kiezen die je het beste kan bestrijden met aanleren digitale vaardigheden.</li>
-                    <li>Onderzoek doen of er momenteel al les wordt gegeven in het bestrijden van de gekozen type cybercrime</li>
+                    <li>Één type cybercrime kiezen die je het beste kan bestrijden met aanleren digitale vaardigheden.
+                    </li>
+                    <li>Onderzoek doen of er momenteel al les wordt gegeven in het bestrijden van de gekozen type
+                        cybercrime</li>
                     <li>Aantal pruts-modellen maken voor leren digitale vaardigheden gekozen cybercrime.</li>
-                    <li>In overleg met opdrachtgever een prutsmodel kiezen (of meerdere samenvoegen) en deze verder uitwerken tot het eindidee.</li>
+                    <li>In overleg met opdrachtgever een prutsmodel kiezen (of meerdere samenvoegen) en deze verder
+                        uitwerken tot het eindidee.</li>
                 </ol>
             </div>
             <img id="process" src="afbeeldingen/undraw_Thought_process_re_om58.png" alt="denkproces">
@@ -108,8 +157,10 @@
             <button id="PVAbtnA">plan van aanpak</button>
         </ul>
     </aside>
-    
-    <footer><p>Met dank aan de Gemeente Kampen. Door Menno Post. Voor vragen mail: 144928@emelwerda.nl</p></footer>
-</body>
-</html>
 
+    <footer>
+        <p>Met dank aan de Gemeente Kampen. Door Menno Post. Voor vragen mail: 144928@emelwerda.nl</p>
+    </footer>
+</body>
+
+</html>
